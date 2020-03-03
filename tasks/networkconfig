@@ -1,0 +1,11 @@
+---
+- name: CIS BUILD TASKS Network Configurations
+  copy:
+    src: /etc/ansible/roles/CIS-BUILD/files/sysctl.conf
+    dest: /etc/sysctl.conf
+    owner: root
+    group: root
+    mode: '0644'
+    backup: yes
+- name: FIX OF 3-4 Task Test
+  script: /etc/ansible/roles/CIS-BUILD/files/testing.sh

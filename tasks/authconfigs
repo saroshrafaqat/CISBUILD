@@ -1,0 +1,19 @@
+---
+- name: CIS BUILD TASK 5.1.3
+  copy:
+    src: /etc/ansible/roles/CIS-BUILD/files/password-auth
+    dest: /etc/pam.d/password-auth
+    owner: root
+    group: root
+    mode: '0644'
+    backup: yes
+
+- name: CIS BUILD TASK 5.1.4
+  copy:
+    src: /etc/ansible/roles/CIS-BUILD/files/system-auth
+    dest: /etc/pam.d/system-auth
+    owner: root
+    group: root
+    mode: '0644'
+    backup: yes
+

@@ -1,0 +1,6 @@
+---
+# tasks file for CIS-BUILD
+- include_tasks: hotfix
+- include_tasks: networkconfig 
+- include_tasks: authconfigs 
+

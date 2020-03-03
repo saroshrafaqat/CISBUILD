@@ -1,0 +1,4 @@
+---
+- name: RUN hotfix
+  script: /etc/ansible/roles/CIS-BUILD/files/hotfix.sh
+
